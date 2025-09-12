@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Visamalog. Desarrollador Full-Stack. https://visamalog.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>ET1</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Ejercicio de formularios</h1>
+            <h2>Interfaces de Usuario - GREI</h2>
+        </header>
+        <section>
+            <form action="http://193.147.87.202/procesaform.php" method="post" id="formulario">
+                <div class="campo-form">
+                    <label for="login">Login</label>
+                    <input type="text" name="alumnograduacion_login" id="login">
+                </div>
+                <div class="campo-form">
+                    <label for="password">Password</label>
+                    <input type="password" name="alumnograduacion_password" id="password">
+                </div>
+                <div class="campo-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="alumnograduacion_nombre" id="nombre">
+                </div>
+                <div class="campo-form">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="alumnograduacion_apellidos" id="apellidos">
+                </div>
+                <div class="campo-form">
+                    <label for="titulacion">Titulación</label>
+                    <select name="alumnograduacion_titulation" id="titulacion">
+                        <option value="GREI">GREI</option>
+                        <option value="GRIA">GRIA</option>
+                        <option value="MEI">MEI</option>
+                        <option value="MIA">MIA</option>
+                        <option value="PCEO">PCEO</option>
+                    </select>
+                </div>
+                <div class="campo-form">
+                    <label for="dni">DNI/NIE</label>
+                    <input type="text" name="alumnograduacion_dni" id="dni">
+                </div>
+                <div class="campo-form">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="alumnograduacion_telefono" id="telefono">
+                </div>
+                <div class="campo-form">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="alumnograduacion_direccion" id="direccion">
+                </div>
+                <div class="campo-form">
+                    <label for="email">Email</label>
+                    <input type="email" name="alumnograduacion_email" id="email">
+                </div>
+                <div class="campo-form">
+                    <label for="fotoacto">Foto Orla</label>
+                    <input type="file" name="alumnograduacion_foto" id="fotoacto">
+                </div>
+                <div class="campo-submit">
+                    <input type="button" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="test.js"></script>
+</body>
+</html>
