@@ -1,9 +1,11 @@
 class ErrorHandling {
+
     constructor() {
 
     }
 
     show_error(id, errors) {
+        this.hide_error(id)
         let container = document.getElementById("div_" + id)
 
         let label = document.getElementById("lbl_" + id)
@@ -24,15 +26,16 @@ class ErrorHandling {
     }
 
     show_correct(id) {
-       let label = document.getElementById("lbl_" + id)
-       label.style.color = "green"
-       
-       let input = document.getElementById(id)
-       input.style.borderColor = "green"
+        this.hide_error(id)
+        let label = document.getElementById("lbl_" + id)
+        label.style.color = "green"
+        
+        let input = document.getElementById(id)
+        input.style.borderColor = "green"
     }
 
     hide_error(id) {
         let errorBox = document.getElementById("error_"+id)
-        document.removeChild(errorBox)
+        if (errorBox) errorBox.parentNode.removeChild(errorBox)
     }
 }

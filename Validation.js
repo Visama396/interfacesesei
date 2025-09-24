@@ -1,7 +1,7 @@
-class Validations {
+class Validations extends ErrorHandling {
 
     constructor() {
-
+        super()
     }
 
     /**
@@ -31,6 +31,7 @@ class Validations {
 
     format(id, compare) {
         let value = document.getElementById(id).value
+        if (value.length == 0) return true
         return compare.test(value)
     }
 }
