@@ -30,6 +30,7 @@ class Validations {
     }
 
     format(id, compare) {
-        return true
+        let value = document.getElementById(id).value
+        return compare.test(value)
     }
 }

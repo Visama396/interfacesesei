@@ -13,7 +13,8 @@ class ErrorHandling {
         input.style.borderColor = "red"
 
         let errorBox = document.createElement("div")
-        for (error in errors) {
+        errorBox.id = "error_"+id
+        for (let error of errors) {
             let errItem = document.createElement("p")
             errItem.innerText = error
             errItem.style.color = "red"
@@ -28,5 +29,10 @@ class ErrorHandling {
        
        let input = document.getElementById(id)
        input.style.borderColor = "green"
+    }
+
+    hide_error(id) {
+        let errorBox = document.getElementById("error_"+id)
+        document.removeChild(errorBox)
     }
 }

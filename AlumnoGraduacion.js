@@ -1,7 +1,6 @@
 class AlumnoGraduacion extends Validations {
     constructor () {
         super()
-        
     }
 
     ADD_login_Validation() {
@@ -11,7 +10,7 @@ class AlumnoGraduacion extends Validations {
         let id = "login"
         let minSize = super.min_size(id, 3)
         let maxSize = super.max_size(id, 20)
-        let format = super.format(id, '')
+        let format = super.format(id, /\s/)
 
         if (minSize && maxSize && format) {
             console.log("ADD CORRECTO")

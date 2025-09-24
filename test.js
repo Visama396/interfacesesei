@@ -4,6 +4,7 @@ document.addEventListener("readystatechange", (e) => {
         let login = document.getElementById("login")
         if (login) {
             login.addEventListener("change", alumnoGrad.ADD_login_Validation)
+            login.addEventListener("focus", )
         }
     }    
 })
