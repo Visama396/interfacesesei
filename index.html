@@ -15,8 +15,16 @@
         <header>
             <h1>Ejercicio de formularios</h1>
             <h2>Interfaces de Usuario - GREI</h2>
+            <nav>
+                <a href="/" class="current nav_item">Inicio</a>
+                <a href="/test1.html" class="nav_item">Test1</a>
+                <a href="/test2.html" class="nav_item">Test2</a>
+                <span class="nav_item">
+                    Idioma
+                </span>
+            </nav>
         </header>
-        <section>
+        <section id="form_container">
             <form action="http://193.147.87.202/procesaform.php" method="post" id="formulario">
                 <div id="div_login" class="campo-form">
                     <label id="lbl_login" for="login">Login</label>
@@ -37,7 +45,6 @@
                 <div id="div_titulacion" class="campo-form">
                     <label id="lbl_titulacion" for="titulacion">Titulación</label>
                     <select name="alumnograduacion_titulation" id="titulacion">
-                        <option value="">Elija titulación</option>
                         <option value="GREI">GREI</option>
                         <option value="GRIA">GRIA</option>
                         <option value="MEI">MEI</option>
@@ -62,7 +69,7 @@
                     <input type="email" name="alumnograduacion_email" id="email">
                 </div>
                 <div id="div_fotoacto" class="campo-form">
-                    <label id="lbl_fotoacto" for="fotoacto">Foto Orla</label>
+                    <label id="lbl_fotoacto" for="fotoacto">Foto</label>
                     <input type="file" name="alumnograduacion_foto" id="fotoacto">
                 </div>
                 <div class="campo-submit">

@@ -34,4 +34,6 @@ class Validations extends ErrorHandling {
         if (value.length == 0) return true
         return compare.test(value)
     }
+
+    
 }

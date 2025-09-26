@@ -16,6 +16,7 @@ class ErrorHandling {
 
         let errorBox = document.createElement("div")
         errorBox.id = "error_"+id
+        errorBox.classList.add("error_box")
         for (let error of errors) {
             let errItem = document.createElement("p")
             errItem.innerText = error
