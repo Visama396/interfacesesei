@@ -3,6 +3,10 @@ class AlumnoGraduacion extends Validations {
         super()
     }
 
+    BUILD_Form() {
+        
+    }
+
     ADD_login_Validation() {
         let id = "login"
         let minSize = super.min_size(id, 4)
@@ -83,10 +87,31 @@ class AlumnoGraduacion extends Validations {
 
     ADD_dni_Validation() {
         let id = "dni"
+        let largo = super.length_valida(id, 9)
+        let format = super.format(id, /^[0-9]{8}[A-Z]$/)
+        if (largo && format) {
+            super.show_correct(id)
+        } else {
+            let errors = []
+            if (!largo) errors.push("El DNI debe tener 9 carácteres.")
+            if (!format) errors.push("El formato válido de DNI es de 8 dígitos seguido de una letra.")
+            super.show_error(id, errors)
+        }
+
     }
 
     ADD_telefono_Validation() {
         let id = "telefono"
+        let largo = super.length_valida(id, 9)
+        let format = super.format(id, /^[0-9]{9}$/)
+        if (largo && format) {
+            super.show_correct(id)
+        } else {
+            let errors = []
+            if (!largo) errors.push("El teléfono debe tener 9 dígitos.")
+            if (!format) errors.push("El teléfono solo admite dígitos.")
+            super.show_error(id, errors)
+        }
     }
 
     ADD_direccion_Validation() {

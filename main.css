@@ -116,3 +116,16 @@ nav {
 .nav_item:hover {
     background-color: #555;
 }
+
+@media (max-width: 1440px) {
+    #formulario {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    #formulario {
+        width: 90vw;
+    }
+}
+

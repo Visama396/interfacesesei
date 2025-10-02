@@ -29,6 +29,11 @@ class Validations extends ErrorHandling {
         return true
     }
 
+    length_valida(id, compare) {
+        let value = document.getElementById(id).value
+        return value.length == compare
+    }
+
     format(id, compare) {
         let value = document.getElementById(id).value
         if (value.length == 0) return true
