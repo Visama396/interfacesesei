@@ -61,7 +61,7 @@ header h2 {
 
 .campo-form input[type="text"], .campo-form input[type="password"], .campo-form input[type="tel"], .campo-form input[type="email"], .campo-form select {
     margin-top: 0.1rem;
-    padding: 0.25rem 0rem;
+    padding: 0.25rem 0.2rem;
     border-radius: 5px;
     background-color: #444;
     color: white;

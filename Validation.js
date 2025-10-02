@@ -35,5 +35,11 @@ class Validations extends ErrorHandling {
         return compare.test(value)
     }
 
+    titulacion_valida(id) {
+        let value = document.getElementById(id).value
+        const titulaciones = ["GREI", "GRIA", "MEI", "MIA", "PCEO"]
+        return titulaciones.includes(value)
+    }
+
     
 }
