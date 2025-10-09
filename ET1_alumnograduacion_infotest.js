@@ -1,4 +1,4 @@
-const  alumnograduacion_def_tests = [
+const alumnograduacion_def_tests = [
     {
         entidad: 'alumnograduacion',
         campo: 'login',
@@ -6,7 +6,7 @@ const  alumnograduacion_def_tests = [
         descripcion: 'comprobar longitud mínima',
         accion: 'ADD',
         resultado_esperado: 'LOGIN_MIN_SIZE_KO',
-        respuesta: 'Error de longitud del login, debe contener al menos 4 caracteres.'
+        respuesta: 'Error de longitud del login, debe contener al menos 4 carácteres.'
     },
     {
         entidad: 'alumnograduacion',
@@ -15,7 +15,7 @@ const  alumnograduacion_def_tests = [
         descripcion: 'comprobar longitud máxima',
         accion: 'ADD',
         resultado_esperado: 'LOGIN_MAX_SIZE_KO',
-        respuesta: 'Error de longitud del login, puede contener como mucho 15 caracteres.'
+        respuesta: 'Error de longitud del login, puede contener como mucho 15 carácteres.'
     },
     {
         entidad: 'alumnograduacion',
@@ -23,8 +23,8 @@ const  alumnograduacion_def_tests = [
         numero_definicion: 3,
         descripcion: 'comprobar formato',
         accion: 'ADD',
-        resultado_esperado: 'LOGIN_MAX_SIZE_KO',
-        respuesta: 'Error de longitud del login, puede contener como mucho 15 caracteres.'
+        resultado_esperado: 'LOGIN_FORMAT_KO',
+        respuesta: 'Error de formato del login, no puede contener carácteres especiales o numéricos.'
     },
     {
         entidad: 'alumnograduacion',
@@ -33,7 +33,376 @@ const  alumnograduacion_def_tests = [
         descripcion: 'login válido',
         accion: 'ADD',
         resultado_esperado: true,
-        respuesta: 'Error de longitud del login, puede contener como mucho 15 caracteres.'
+        respuesta: 'Login es correcto'
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: 'login',
+        numero_definicion: 5,
+        descripcion: 'comprobar longitud máxima',
+        accion: 'EDIT',
+        resultado_esperado: 'LOGIN_MAX_SIZE_KO',
+        respuesta: 'Error de longitud del login, puede contener como mucho 15 carácteres.'
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: 'login',
+        numero_definicion: 5,
+        descripcion: 'comrpobar formato',
+        accion: 'EDIT',
+        resultado_esperado: 'LOGIN_FORMAT_KO',
+        respuesta: 'Error de formato del login, no puede contener carácteres especiales o numéricos.'
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
+    },
+    {
+        entidad: 'alumnograduacion',
+        campo: '',
+        numero_definicion: 5,
+        descripcion: '',
+        accion: '',
+        resultado_esperado: '',
+        respuesta: ''
     }
 ]
 
